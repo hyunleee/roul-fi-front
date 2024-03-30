@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roul-Fi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .container {
+            display: flex;
+            margin-top: 70px;
+            margin-bottom: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1 {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2 {
+            flex: 1;
+            margin-left: 1px;
+            justify-content: center; /* 수평 방향 가운데 정렬 */
+            align-items: center; /* 수직 방향 가운데 정렬 */
+        }
+        .nav-item{
+            margin-right: 30px;
+            font-size: 30px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#" style="font-size: 38px;">
+                <img src="./images/Logo.png" alt="Logo" width="50" height="auth" class="d-inline-block align-text-top">
+                Roul-Fi
+            </a>
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item" style="margin-right: 40px;">
+                    <a class="nav-link" href="#">Stake</a>
+                </li>
+                <li class="nav-item" style="margin-right: 40px;">
+                    <a class="nav-link" href="#">Play</a>
+                </li>
+                <li class="nav-item" style="margin-right: 40px;">
+                    <a class="nav-link" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;" >
+                    <p style="font-size:25px; color: rgb(0, 139, 185)" >0x333...333</p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="box1" style="display: flex; flex-direction: column;">
+                <div>
+                    <img src="./images/stakeEth.png" alt="title1" width="470" height="auth">
+                </div>
+                <div style="background-color: rgba(44, 199, 251, 0.20); border-radius: 10px; padding: 20px; width: 650px; height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <div style="margin-bottom: 20px;">
+                        <input type="text" placeholder="ETH staking amount" style="width: 550px; height: 45px;">
+                    </div>
+                    <div>
+                        <div style="width: 550px; height: 45px; text-align: center; background-color: #53717A; border-radius: 10px; padding-top: 10px; color: white; margin-bottom: 20px;">
+                            <p>o.ooo ETH is in Neopin Wallet</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 10px;">
+                                <p>You will receive</p>
+                                <p>------------------------------</p>
+                                <p>0.0rfETH</p>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 10px;">
+                                <p>Exchange rate</p>
+                                <p>------------------------------</p>
+                                <p>0.0rfETH</p>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 10px;">
+                                <p>Transaction fee</p>
+                                <p>------------------------------</p>
+                                <p>0.0rfETH</p>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 10px;">
+                                <p>Roul-Fi fee</p>
+                                <p>------------------------------</p>
+                                <p>0.0rfETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box2" style="margin-left: 120px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <div style="margin-bottom: 20px;">
+                    <img src="./images/stakeStatistics.png" alt="dice" width="400" height="auth">
+                </div>
+                <div style="background-color: rgba(44, 199, 251, 0.20); border-radius: 10px; padding: 20px; margin-top: 20px; width: 600px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>You will receive</p>
+                        <p>------------------------------</p>
+                        <p>0.0rfETH</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Exchange rate</p>
+                        <p>------------------------------</p>
+                        <p>0.0rfETH</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Transaction fee</p>
+                        <p>------------------------------</p>
+                        <p>0.0rfETH</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Roul-Fi fee</p>
+                        <p>------------------------------</p>
+                        <p>0.0rfETH</p>
+                    </div>
+                </div>
+                <img src="./images/roule&rock2.png" alt="roule&rock2" width="500">
+            </div>
+        </div>
+    </section>
+    <div style="display: flex; justify-content: center; align-items: center" >
+        <p style="color:rgb(111, 111, 111)">Presented by BV24</p>
+    </div>
+              
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
