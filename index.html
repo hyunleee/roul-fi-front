@@ -90,120 +90,120 @@
                 const accounts = await ethereum.request({method: "eth_requestAccounts"});
                 account = accounts[0];
                 console.log(`my contract: ${account}`);
-                const ADDRESS =0xAa9ED4a507472a22119ed1630F0b06F212180852;
-                const ABI= [
-    {
-        "inputs": [],
-        "stateMutability": "nonpayable",
-        "type": "constructor"
-    },
-    {
-        "inputs": [],
-        "name": "faucet",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "owner",
-        "outputs": [
-            {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "roulefi",
-        "outputs": [
-            {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "balanceOf",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "initialize",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "_roulefi",
-                "type": "address"
-            }
-        ],
-        "name": "initialize",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "to",
-                "type": "address"
-            },
-            {
-                "internalType": "uint256",
-                "name": "amount",
-                "type": "uint256"
-            }
-        ],
-        "name": "mint",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "to",
-                "type": "address"
-            },
-            {
-                "internalType": "uint256",
-                "name": "amount",
-                "type": "uint256"
-            }
-        ],
-        "name": "burn",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    }
-]
+//                 const ADDRESS =0xAa9ED4a507472a22119ed1630F0b06F212180852;
+//                 const ABI= [
+//     {
+//         "inputs": [],
+//         "stateMutability": "nonpayable",
+//         "type": "constructor"
+//     },
+//     {
+//         "inputs": [],
+//         "name": "faucet",
+//         "outputs": [],
+//         "stateMutability": "nonpayable",
+//         "type": "function"
+//     },
+//     {
+//         "inputs": [],
+//         "name": "owner",
+//         "outputs": [
+//             {
+//                 "internalType": "address",
+//                 "name": "",
+//                 "type": "address"
+//             }
+//         ],
+//         "stateMutability": "view",
+//         "type": "function"
+//     },
+//     {
+//         "inputs": [],
+//         "name": "roulefi",
+//         "outputs": [
+//             {
+//                 "internalType": "address",
+//                 "name": "",
+//                 "type": "address"
+//             }
+//         ],
+//         "stateMutability": "view",
+//         "type": "function"
+//     },
+//     {
+//         "inputs": [],
+//         "name": "balanceOf",
+//         "outputs": [
+//             {
+//                 "internalType": "uint256",
+//                 "name": "",
+//                 "type": "uint256"
+//             }
+//         ],
+//         "stateMutability": "view",
+//         "type": "function"
+//     },
+//     {
+//         "inputs": [],
+//         "name": "initialize",
+//         "outputs": [],
+//         "stateMutability": "nonpayable",
+//         "type": "function"
+//     },
+//     {
+//         "inputs": [
+//             {
+//                 "internalType": "address",
+//                 "name": "_roulefi",
+//                 "type": "address"
+//             }
+//         ],
+//         "name": "initialize",
+//         "outputs": [],
+//         "stateMutability": "nonpayable",
+//         "type": "function"
+//     },
+//     {
+//         "inputs": [
+//             {
+//                 "internalType": "address",
+//                 "name": "to",
+//                 "type": "address"
+//             },
+//             {
+//                 "internalType": "uint256",
+//                 "name": "amount",
+//                 "type": "uint256"
+//             }
+//         ],
+//         "name": "mint",
+//         "outputs": [],
+//         "stateMutability": "nonpayable",
+//         "type": "function"
+//     },
+//     {
+//         "inputs": [
+//             {
+//                 "internalType": "address",
+//                 "name": "to",
+//                 "type": "address"
+//             },
+//             {
+//                 "internalType": "uint256",
+//                 "name": "amount",
+//                 "type": "uint256"
+//             }
+//         ],
+//         "name": "burn",
+//         "outputs": [],
+//         "stateMutability": "nonpayable",
+//         "type": "function"
+//     }
+// ]
 
-                window.web3 = await new Web3(window.ethereum);
-                window.contract = new web3.eth.Contract(ABI, ADDRESS);
-                window.location.href = 'afterLogin.html';
+//                 window.web3 = await new Web3(window.ethereum);
+//                 window.contract = new web3.eth.Contract(ABI, ADDRESS);
+//                 window.location.href = 'afterLogin.html';
         }
         }
         document.getElementById('connectButton').addEventListener('click', function() {
