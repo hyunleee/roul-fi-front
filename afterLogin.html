@@ -113,7 +113,6 @@
                 const accounts = await ethereum.request({method: "eth_requestAccounts"});
                 account = accounts[0];
                 console.log(`my contract: ${account}`);
-                window.location.href = 'afterLogin.html';
         }
         }
         function sliceHex(hexValue) {
