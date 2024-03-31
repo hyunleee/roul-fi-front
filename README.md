@@ -72,7 +72,7 @@ main().catch((error) => {
 })
 ```
 
-Result
+
 ![image](https://github.com/hyunleee/roul-fi-front/assets/100356715/b21bea1c-1e4a-4ec8-9c47-43f543279239)
 
 Connection with Neon EVM, By writing frequent raffle information on the blockchain, 'Roul-Fi' is expect to reduce costs and improve speed. Also it is looking forward to expanding 'Roul - Fi' ecosystem beyond Ethereum and into the Solana ecosystem.
