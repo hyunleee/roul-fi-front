@@ -10,11 +10,11 @@ These days lots of liquid staking protocols are showing up. They offer reward yi
 4. [Contribution](#contribution)
 5. [License](#license)
 
-## 소개
+## Introduce
 
 프로젝트에 대한 상세한 소개를 작성합니다. 프로젝트의 목적과 주요 기능을 설명합니다.
 
-## 설치
+## Installation
 
 1. Clone this repository.
 
