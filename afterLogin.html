@@ -111,7 +111,7 @@
         const wallet = async () => {
         if(window.ethereum !== "undefined") {
                 const accounts = await ethereum.request({method: "eth_requestAccounts"});
-                account = accounts[0];
+                const account = accounts[0];
                 console.log(`my contract: ${account}`);
         }
         }
