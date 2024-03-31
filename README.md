@@ -8,7 +8,6 @@ These days lots of liquid staking protocols are showing up. They offer reward yi
 2. [Installation](#installation)
 3. [Usage](#usage)
 4. [Contribution](#contribution)
-5. [License](#license)
 
 ## Introduce
 
@@ -92,3 +91,15 @@ $ sudo apt update
 $ sduo apt install nginx
 $ sudo systemctl start nginx
 ```
+
+## Usage
+
+
+
+
+## Contribution
+- [Park DoYeon](https://github.com/parkttule)
+- [Lee hyunlee](https://github.com/hyunleee)
+- [Lee shiohn](https://github.com/bestzion)
+- [Jeong-min](mailto::lleonadee@gmail.com)
+
