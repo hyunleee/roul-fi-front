@@ -76,7 +76,7 @@
             </div>
         </div>
         <div style="margin-bottom: 80px; margin-top: 65px">
-            <button type="button" class="btn btn-primary" id="connectButton" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: 30px; --bs-btn-padding-x: 20px; --bs-btn-padding-y: 10px;">Connect Neopin Wallet to Start</button>
+            <button type="button" class="btn btn-primary" id="connectButton" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: 30px; --bs-btn-padding-x: 20px; --bs-btn-padding-y: 10px;">Connect Wallet to Start</button>
         </div>
     </section>
     <div style="display: flex; justify-content: center; align-items: center" >
@@ -204,6 +204,7 @@
 //                 window.web3 = await new Web3(window.ethereum);
 //                 window.contract = new web3.eth.Contract(ABI, ADDRESS);
 //                 window.location.href = 'afterLogin.html';
+                location.href="/afterLogin.html";
         }
         }
         document.getElementById('connectButton').addEventListener('click', function() {
