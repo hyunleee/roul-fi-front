@@ -63,7 +63,7 @@
                     <a class="nav-link" href="dashboard.html">Dashboard</a>
                 </li>
                 <li class="nav-item" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;" >
-                    <p style="font-size:25px; color: rgb(0, 139, 185)" >0x333...333</p>
+                    <p style="font-size:25px; color: rgb(0, 139, 185)" id="wallet"></p>
                 </li>
 
             </ul>
@@ -107,5 +107,32 @@
     </div>
               
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const wallet = async () => {
+        if(window.ethereum !== "undefined") {
+                const accounts = await ethereum.request({method: "eth_requestAccounts"});
+                account = accounts[0];
+                console.log(`my contract: ${account}`);
+                window.location.href = 'afterLogin.html';
+        }
+        }
+        function sliceHex(hexValue) {
+    // 헥스값을 문자열로 변환
+        let hexString = hexValue.toString();
+
+        // 왼쪽 5개 문자 슬라이싱
+        let leftSlice = hexString.slice(0, 5);
+
+        // 오른쪽 3개 문자 슬라이싱
+        let rightSlice = hexString.slice(-3);
+
+        // 결과 반환
+        return { left: leftSlice, right: rightSlice };
+    }
+        wallet();
+        const walletaddress = sliceHex(account);
+        document.getElementById("wallet").innerHTML = walletaddress;
+
+    </script>
   </body>
 </html>
