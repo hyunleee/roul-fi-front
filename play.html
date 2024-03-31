@@ -8,29 +8,36 @@
     <style>
         .container {
             display: flex;
-            margin-top: 70px;
-            margin-bottom: 100px;
+            margin-top: 30px;
+            margin-bottom: 30px;
             justify-content: center;
             align-items: center;
-        }
-        .box1 {
-            flex: 1;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-        .box2 {
-            flex: 1;
-            margin-left: 1px;
-            justify-content: center; /* 수평 방향 가운데 정렬 */
-            align-items: center; /* 수직 방향 가운데 정렬 */
         }
         .nav-item{
             margin-right: 30px;
             font-size: 30px;
         }
-
+        .ball {
+            position: relative;
+            width: 200px; /* 당구공 이미지의 너비 */
+            height: 200px; /* 당구공 이미지의 높이 */
+            margin: 0 10px;
+        }
+        .balls {
+            display: flex; /* 자식 요소를 가로로 나열합니다. */
+            justify-content: center; /* 가로로 중앙 정렬합니다. */
+        }
+        .number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* 텍스트 그림자 설정 */
+        }
     </style>
   </head>
   <body>
@@ -40,96 +47,95 @@
                 <img src="./images/Logo.png" alt="Logo" width="50" height="auth" class="d-inline-block align-text-top">
                 Roul-Fi
             </a>
+            
             <ul class="navbar-nav d-flex flex-row">
                 <li class="nav-item" style="margin-right: 40px;">
-                    <a class="nav-link" href="#">Stake</a>
+                    <a class="nav-link" href="stake.html">Stake</a>
                 </li>
                 <li class="nav-item" style="margin-right: 40px;">
-                    <a class="nav-link" href="#">Play</a>
+                    <a class="nav-link" href="play.html">Play</a>
                 </li>
                 <li class="nav-item" style="margin-right: 40px;">
-                    <a class="nav-link" href="#">Dashboard</a>
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
                 </li>
                 <li class="nav-item" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;" >
                     <p style="font-size:25px; color: rgb(0, 139, 185)" >0x333...333</p>
                 </li>
+
             </ul>
         </div>
     </nav>
+
     <section class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <div class="box1" style="display: flex; flex-direction: column;">
-                <div>
-                    <img src="./images/play-title.png" alt="title1" width="470" height="auth">
-                </div>
-                <div style="background-color: rgba(44, 199, 251, 0.20); border-radius: 10px; padding: 20px; width: 650px; height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                    <div style="margin-bottom: 20px;">
-                        <input type="text" placeholder="ETH staking amount" style="width: 550px; height: 45px;">
-                    </div>
-                    <div>
-                        <div style="width: 550px; height: 45px; text-align: center; background-color: #53717A; border-radius: 10px; padding-top: 10px; color: white; margin-bottom: 20px;">
-                            <p>o.ooo ETH is in Neopin Wallet</p>
-                        </div>
-                        <div style="display: flex; flex-direction: column; align-items: center;">
-                            <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 10px;">
-                                <p>You will receive</p>
-                                <p>------------------------------</p>
-                                <p>0.0rfETH</p>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 10px;">
-                                <p>Exchange rate</p>
-                                <p>------------------------------</p>
-                                <p>0.0rfETH</p>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 10px;">
-                                <p>Transaction fee</p>
-                                <p>------------------------------</p>
-                                <p>0.0rfETH</p>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 10px;">
-                                <p>Roul-Fi fee</p>
-                                <p>------------------------------</p>
-                                <p>0.0rfETH</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="box2" style="margin-left: 120px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                <div style="margin-bottom: 20px;">
-                    <img src="./images/stakeStatistics.png" alt="dice" width="400" height="auth">
-                </div>
-                <div style="background-color: rgba(44, 199, 251, 0.20); border-radius: 10px; padding: 20px; margin-top: 20px; width: 600px;">
-                    <div style="display: flex; justify-content: space-between;">
-                        <p>You will receive</p>
-                        <p>------------------------------</p>
-                        <p>0.0rfETH</p>
-                    </div>
-                    <div style="display: flex; justify-content: space-between;">
-                        <p>Exchange rate</p>
-                        <p>------------------------------</p>
-                        <p>0.0rfETH</p>
-                    </div>
-                    <div style="display: flex; justify-content: space-between;">
-                        <p>Transaction fee</p>
-                        <p>------------------------------</p>
-                        <p>0.0rfETH</p>
-                    </div>
-                    <div style="display: flex; justify-content: space-between;">
-                        <p>Roul-Fi fee</p>
-                        <p>------------------------------</p>
-                        <p>0.0rfETH</p>
-                    </div>
-                </div>
-                <img src="./images/roule&rock2.png" alt="roule&rock2" width="500">
-            </div>
+        <div style="margin-bottom: 20px;">
+            <img src="./images/play-title.png" alt="logo2" width="400px" height="auth">
         </div>
+        <div style="display:flex;">
+        <div style="background-color: #BFEFFF; padding: 30px; border-radius: 20px; text-align:center; flex:1; margin-right: 30px;">
+            <img src="./images/play-title2.png" alt="title2" width="400px" height="auth">
+            <div class=balls>
+                <div class=ball>
+                    <img src="./images/ball1.png" alt="Billiard Ball" width="200" height="200">
+                    <div class="number">8</div>
+                </div>
+                <div class=ball>
+                    <img src="./images/ball2.png" alt="Billiard Ball" width="200" height="200">
+                    <div class="number">2</div>
+                </div>
+                <div class=ball>
+                    <img src="./images/ball3.png" alt="Billiard Ball" width="200" height="200">
+                    <div class="number">1</div>
+                </div>
+            </div>
+            <div class=balls>
+                <div class=ball>
+                    <img src="./images/ball4.png" alt="Billiard Ball" width="200" height="200">
+                    <div class="number">4</div>
+                </div>
+                <div class=ball>
+                    <img src="./images/ball5.png" alt="Billiard Ball" width="200" height="200">
+                    <div class="number">5</div>
+                </div>
+                <div class=ball>
+                    <img src="./images/ball6.png" alt="Billiard Ball" width="200" height="200">
+                    <div class="number">8</div>
+                </div>
+                <div class=ball>
+                    <img src="./images/ball7.png" alt="Billiard Ball" width="200" height="200">
+                    <div class="number">8</div>
+                </div>
+            </div>
+            <div style="font-size: 20px; background-color: #53717A; border-radius: 20px; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center;padding-top: 20px; padding-bottom: 20px;">
+                <div style="display: flex; justify-content: space-around; align-items: flex-start; width: 60%;">
+                    <p>Your Betting Position: </p>
+                    <div>
+                        <input type="number" placeholder="1 to 50" style="border-radius: 10px;">
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-around; align-items: flex-start; width: 40%;">
+                    <p>Expected Game Fee: </p>
+                    <p>12 RFT</p>
+                </div>
+            </div>
+                        
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin-left: 20px;">
+            <img src="./images/dice.png" alt="dice" width="350px" style="margin-bottom: 40px;">
+            <img src="./images/play-title3.png" alt="title3" width="400px">
+        </div>
+    </div>
+
+
     </section>
-    <div style="display: flex; justify-content: center; align-items: center" >
+     <div style="display: flex; justify-content: center; align-items: center" >
         <p style="color:rgb(111, 111, 111)">Presented by BV24</p>
     </div>
               
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('connectButton').addEventListener('click', function() {
+            window.location.href = 'afterLogin.html';
+          });
+    </script>
   </body>
 </html>
