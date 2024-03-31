@@ -73,7 +73,7 @@
         <div class="box1" style="margin-right: 70px;">
             <p class="page1_content">Stake to Earn Interest,<br>Stake to go for a big Shot.</p>
             <button type="button" class="btn btn-primary"
-            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: 30px; --bs-btn-padding-x: 40px;">Stake Now</button>
+            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: 30px; --bs-btn-padding-x: 40px;" onclick="redirect_stake()">Stake Now</button>
         </div>
         <div class="box2">
             <img src="./images/roulette&rocket.png" alt="roulette&rocket" width="500" height="500">
@@ -87,7 +87,7 @@
             <img src="./images/leftWrap.png" alt="leftWrap" width="auth" height="600" style="margin-left:20px;">   
             <div class="box1"> 
                 <img src="./images/page22.png" alt="page22" width="650" height="auth" style="margin-left: 20px; margin-bottom: 10px;">
-                <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: 30px; --bs-btn-padding-x: 120px;">Play</button>
+                <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: 30px; --bs-btn-padding-x: 120px;" onclick="redirect_play()">Play</button>
             </div>
             <img src="./images/rightWrap.png" alt="rightWrap" width="auth" height="600">
         </div>
@@ -108,7 +108,13 @@
               
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
+        function redirect_stake() {
+            location.href="/stake.html";
+        }
 
+        function redirect_play() {
+            location.href="/play.html";
+        }
 
         function sliceHex(hexValue) {
     // 헥스값을 문자열로 변환
