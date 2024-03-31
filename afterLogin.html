@@ -134,11 +134,12 @@
                 const accounts = await ethereum.request({method: "eth_requestAccounts"});
                 const account = accounts[0];
                 console.log(`my contract: ${account}`);
+                var walletaddress = sliceHex(account);
+                console.log(walletaddress);
+                document.getElementById("walletaddresshex").innerHTML = walletaddress;
         }
 
-        var walletaddress = sliceHex(account);
-        console.log(walletaddress);
-        document.getElementById("walletaddresshex").innerHTML = walletaddress;
+        
     }
     wallet();
 
