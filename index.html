@@ -90,11 +90,11 @@
                 const accounts = await ethereum.request({method: "eth_requestAccounts"});
                 account = accounts[0];
                 console.log(`my contract: ${account}`);
+                window.location.href = 'afterLogin.html';
         }
         }
         document.getElementById('connectButton').addEventListener('click', function() {
             start();   
-            window.location.href = 'afterLogin.html';
           });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
