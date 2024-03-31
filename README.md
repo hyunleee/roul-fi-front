@@ -71,6 +71,7 @@ main().catch((error) => {
     process.exitCode = 1;
 })
 ```
+
 Result
 ![image](https://github.com/hyunleee/roul-fi-front/assets/100356715/b21bea1c-1e4a-4ec8-9c47-43f543279239)
 
