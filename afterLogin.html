@@ -63,7 +63,7 @@
                     <a class="nav-link" href="dashboard.html">Dashboard</a>
                 </li>
                 <li class="nav-item" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;" >
-                    <p style="font-size:25px; color: rgb(0, 139, 185)" id="wallet"></p>
+                    <p style="font-size:25px; color: rgb(0, 139, 185)" id="walletaddresshex"></p>
                 </li>
 
             </ul>
@@ -130,8 +130,8 @@
         return { left: leftSlice, right: rightSlice };
     }
         wallet();
-        const walletaddress = sliceHex(account);
-        document.getElementById("wallet").innerHTML = walletaddress;
+        var walletaddress = sliceHex(account);
+        document.getElementById("walletaddresshex").innerHTML = walletaddress;
 
     </script>
   </body>
