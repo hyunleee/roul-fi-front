@@ -2,7 +2,7 @@
 
 These days lots of liquid staking protocols are showing up. They offer reward yields for staking, but it's only 5% for staking an Ethereum in Lido. To lift up the yield amount and to become an entertainment source for usres, ‘Roul-Fi’ offers Probability Redistribution based on DeFi. Users can participate in ‘Raffles’ based on the RST tokens that receive as a reward for staking. Connected with Neon EVM, it becomes easy to send micro transaction with fast and less fee than others. By stimulating and driving interest in staking, ‘Roul-Fi’ can help grow the ecosystem and increase TVL.
 
-## Agende
+## Agenda
 
 1. [Introduce](#introduce)
 2. [Installation](#installation)
