@@ -121,5 +121,38 @@
             window.location.href = 'afterLogin.html';
           });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script>
+        function sliceHex(hexValue) {
+    // 헥스값을 문자열로 변환
+        let hexString = hexValue.toString();
+
+        // 만약에 입력값이 0x로 시작하는 형태라면 "0x"를 제거
+        if (hexString.startsWith('0x')) {
+            hexString = hexString.slice(2);
+        }
+
+        // 왼쪽 5개 문자 슬라이싱
+        let leftSlice = hexString.slice(0, 5);
+
+        // 오른쪽 3개 문자 슬라이싱
+        let rightSlice = hexString.slice(-3);
+
+        // 완전한 문자열로 조합하여 반환
+        return "0x" + leftSlice + "..." + rightSlice;
+    }
+
+          const wallet = async () => {
+        if(window.ethereum !== "undefined") {
+                const accounts = await ethereum.request({method: "eth_requestAccounts"});
+                const account = accounts[0];
+                console.log(`my contract: ${account}`);
+                var walletaddress = sliceHex(account);
+                console.log(walletaddress);
+                document.getElementById("walletaddresshex").innerHTML = walletaddress;
+            }
+            
+        }
+        wallet();
   </body>
 </html>
