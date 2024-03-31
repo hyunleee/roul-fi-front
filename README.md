@@ -94,6 +94,31 @@ $ sudo systemctl start nginx
 
 ## Usage
 
+**1. Main**
+
+<img width="1920" alt="KakaoTalk_20240331_141750022_01" src="https://github.com/hyunleee/roul-fi-front/assets/100356715/01e7e9b3-477d-4c4b-8fd7-7fcaac907461">
+
+The first time you visit ‘Roul-Fi’, you'll see this page. There are short introduction of 'Roul-fi'. You need to connect with you own wallet (For now, Metamask only) to proceed.
+
+**2. Stake**
+
+![KakaoTalk_20240331_123526757_02](https://github.com/hyunleee/roul-fi-front/assets/100356715/2add41e5-86ef-49db-92bc-5e4fffefbb4e)
+
+
+The staking is one of key features of ‘Roul-Fi’. You can stake your ETH from wallet as much as you want. Since ‘Roul-Fi’ has a feature of liquid staking, you will receive same amount of rsETH, which is Roul-Fi staked ETH. And as an yield, ‘Roul-Fi’ issues RST, which is ‘Roul-Fi’ utility token.
+
+**3. Play**
+
+<img width="1920" alt="KakaoTalk_20240331_141750022_02" src="https://github.com/hyunleee/roul-fi-front/assets/100356715/bdd97ed4-eb7f-4295-9e65-06235ea43d7a">
+
+‘Play’, this is where 'Roul-fi' has a competitive advantage. RST token, that claimed from staking ETH, it can be used as a way to pay to participate in Raffles. You need to write total 7 numbers, between 1 and 20. Right after entering the numbers and the amount of bets you will participate, contracts will start making random numbers which is the answer of the raffle and compare with the numbers you send. As this process will be done in blockchain contracts, ‘Roul-Fi’ guarantees transparency of the raffle. If the number of ball is same as the number that from contracts, you will get xN amount of RST as many numbers you matched.
+
+**4. Leaderboard**
+
+<img width="1920" alt="KakaoTalk_20240331_141750022" src="https://github.com/hyunleee/roul-fi-front/assets/100356715/c5a2dc48-97b3-47d1-8d39-f2c0fce51889">
+
+
+ How many games are done, how much grants that users claimed, will be displayed in Leaderboard. And your stats will also be displayed in this page. You'll be ranked based on the games you've played and the amount of money you've bet, and we plan to offer airdrops based on your ranking.
 
 
 
